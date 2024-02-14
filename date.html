@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-gradient-to-r from-rose-400 to-red-500">
+    <div  class=" p-5">
+    <form class=" flex flex-col mx-auto my-40 shadow-lg rounded-lg bg-white w-1/3 justify-center items-center h-1/3 " action="#">
+        <label class="uppercase text-2xl  font-bold  text-[#F0484A] m-5"   for="birthday">input Date</label>
+        <input id="date" class="w-1/3 m-5 border-2 px-5 text-center py-2" type="date" type="date" id="birthday" placeholder="dd/mm/yy">
+        <input onclick="popu()" class="bg-[#FB7083] px-5 py-2 m-5 rounded-lg shadow-lg hover:bg-[#F0484A] hover:scale-110 duration-100 text-white border-white active:bg-[#b71919]" type="submit">
+      </form>
+      <div id="popup" class=" hidden fixed top-0 left-0 w-full h-screen bg-black/50 flex items-center justify-center ">
+        <div class=" w-2/3 h-1/3 bg-white p-10 rounded-3xl relative shadow-mg">
+          <div class="text-[#F0484A] text-8xl uppercase text-center font-semibold mb-2 "> input Date</div>
+          <div id="show" class="text-7xl font-semibold text-[#F0484A] text-center">
+        
+          </div>
+          <button onclick="closepopup()" id="closebutton" class=" absolute right-2 top-2 text-gray-600">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+             </svg>             
+           </button>
+        </div>
+        </div>
+        <script src="./date.js" ></script>
+</body>
+</html>
